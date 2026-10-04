@@ -1,0 +1,53 @@
+{
+  "schema_name": "Synthetic Sales Reference v1",
+  "max_input_bytes": 10000000,
+  "max_data_rows": 20000,
+  "max_columns": 20,
+  "currency": "USD",
+  "headers": [
+    "order_id",
+    "order_date",
+    "region",
+    "product",
+    "category",
+    "quantity",
+    "unit_price",
+    "customer_note"
+  ],
+  "required_fields": [
+    "order_id",
+    "order_date",
+    "region",
+    "product",
+    "category",
+    "quantity",
+    "unit_price"
+  ],
+  "rules": [
+    {
+      "id": 1,
+      "name": "Normalize and validate headers",
+      "detail": "Trim outer whitespace and case-fold header labels. Reject duplicate, missing, or unknown labels; column order may vary."
+    },
+    {
+      "id": 2,
+      "name": "Trim cell whitespace",
+      "detail": "Trim outer whitespace from every cell and record each changed cell. Keep the original source file unchanged."
+    },
+    {
+      "id": 3,
+      "name": "Validate required fields and types",
+      "detail": "Require order_id, order_date, region, product, category, quantity, and unit_price. Dates must be YYYY-MM-DD, quantity a positive whole number, and unit_price a positive decimal with no more than two fractional digits. Invalid rows are quarantined."
+    },
+    {
+      "id": 4,
+      "name": "Quarantine duplicate order IDs",
+      "detail": "Keep the first otherwise-valid occurrence of each order_id. Quarantine later otherwise-valid repeats; never merge or discard them silently."
+    },
+    {
+      "id": 5,
+      "name": "Derive line totals exactly",
+      "detail": "Calculate line_total as quantity multiplied by unit_price using Decimal arithmetic. Do not round or fill missing inputs."
+    }
+  ]
+}

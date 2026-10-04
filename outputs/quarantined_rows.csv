@@ -1,0 +1,8 @@
+source_record,reason,source_row_json
+73,Duplicate order_id: a prior otherwise-valid row was kept.,"[""SYN-0001"",""2026-06-22"",""North"",""Cedar & Clay mug"",""Home goods"",""2"",""12.50"",""Intentional repeated ID for quarantine demo.""]"
+74,Missing required field: region.,"[""SYN-BAD-01"",""2026-06-23"","""",""Rêve planter"",""Home goods"",""1"",""24.00"",""Missing region; kept for review.""]"
+75,Invalid order_date: expected YYYY-MM-DD.,"[""SYN-BAD-02"",""2026-13-24"",""South"",""Tidal notebook"",""Paper goods"",""1"",""8.40"",""Invalid date example.""]"
+76,Invalid quantity: enter a positive whole number.,"[""SYN-BAD-03"",""2026-06-25"",""East"",""Orbit canvas tote"",""Carry"",""many"",""18.00"",""Invalid quantity example.""]"
+77,Invalid unit_price: enter a positive decimal with at most two fractional digits.,"[""SYN-BAD-04"",""2026-06-26"",""West"",""Maple serving tray"",""Kitchen"",""1"",""NaN"",""Invalid price example.""]"
+78,Invalid unit_price: enter a positive decimal with at most two fractional digits.,"[""SYN-BAD-05"",""2026-06-27"",""North"",""Slate pen set"",""Paper goods"",""1"",""14.601"",""Three decimal places are rejected.""]"
+79,"Column count mismatch: expected 8, found 7.","[""SYN-BAD-06"",""2026-06-28"",""South"",""Finch steel bottle"",""Drinkware"",""1"",""22.00""]"

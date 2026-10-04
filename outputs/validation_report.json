@@ -1,0 +1,273 @@
+{
+  "report_version": "1",
+  "schema_name": "Synthetic Sales Reference v1",
+  "source_name": "source_sales.csv",
+  "source_sha256": "dbf9d551076c420da7533de16342a7ec7848d17019b438a20657b3ce13262330",
+  "source_size_bytes": 5476,
+  "source_records": 79,
+  "accepted_records": 72,
+  "quarantined_records": 7,
+  "header_changes": [],
+  "header_changes_count": 0,
+  "trimmed_cells": 19,
+  "change_log": [
+    {
+      "record_number": 2,
+      "field": "product",
+      "before": " Orbit canvas tote ",
+      "after": "Orbit canvas tote"
+    },
+    {
+      "record_number": 5,
+      "field": "order_id",
+      "before": " SYN-0005 ",
+      "after": "SYN-0005"
+    },
+    {
+      "record_number": 5,
+      "field": "region",
+      "before": " North ",
+      "after": "North"
+    },
+    {
+      "record_number": 9,
+      "field": "quantity",
+      "before": " 5 ",
+      "after": "5"
+    },
+    {
+      "record_number": 11,
+      "field": "unit_price",
+      "before": " 22.00 ",
+      "after": "22.00"
+    },
+    {
+      "record_number": 14,
+      "field": "order_id",
+      "before": " SYN-0014 ",
+      "after": "SYN-0014"
+    },
+    {
+      "record_number": 14,
+      "field": "region",
+      "before": " South ",
+      "after": "South"
+    },
+    {
+      "record_number": 28,
+      "field": "order_id",
+      "before": " SYN-0028 ",
+      "after": "SYN-0028"
+    },
+    {
+      "record_number": 28,
+      "field": "region",
+      "before": " West ",
+      "after": "West"
+    },
+    {
+      "record_number": 32,
+      "field": "product",
+      "before": " Cedar & Clay mug ",
+      "after": "Cedar & Clay mug"
+    },
+    {
+      "record_number": 41,
+      "field": "order_id",
+      "before": " SYN-0041 ",
+      "after": "SYN-0041"
+    },
+    {
+      "record_number": 41,
+      "field": "region",
+      "before": " North ",
+      "after": "North"
+    },
+    {
+      "record_number": 49,
+      "field": "quantity",
+      "before": " 1 ",
+      "after": "1"
+    },
+    {
+      "record_number": 51,
+      "field": "unit_price",
+      "before": " 8.40 ",
+      "after": "8.40"
+    },
+    {
+      "record_number": 56,
+      "field": "order_id",
+      "before": " SYN-0056 ",
+      "after": "SYN-0056"
+    },
+    {
+      "record_number": 56,
+      "field": "region",
+      "before": " West ",
+      "after": "West"
+    },
+    {
+      "record_number": 62,
+      "field": "product",
+      "before": " Maple serving tray ",
+      "after": "Maple serving tray"
+    },
+    {
+      "record_number": 69,
+      "field": "order_id",
+      "before": " SYN-0069 ",
+      "after": "SYN-0069"
+    },
+    {
+      "record_number": 69,
+      "field": "region",
+      "before": " North ",
+      "after": "North"
+    }
+  ],
+  "quarantine_reasons": {
+    "Column count mismatch: expected 8, found 7.": 1,
+    "Duplicate order_id: a prior otherwise-valid row was kept.": 1,
+    "Invalid order_date: expected YYYY-MM-DD.": 1,
+    "Invalid quantity: enter a positive whole number.": 1,
+    "Invalid unit_price: enter a positive decimal with at most two fractional digits.": 2,
+    "Missing required field: region.": 1
+  },
+  "total_units": 252,
+  "total_revenue_cents": 499370,
+  "total_revenue": "4993.70",
+  "currency": "USD",
+  "rules": [
+    {
+      "id": 1,
+      "name": "Normalize and validate headers",
+      "detail": "Trim outer whitespace and case-fold header labels. Reject duplicate, missing, or unknown labels; column order may vary."
+    },
+    {
+      "id": 2,
+      "name": "Trim cell whitespace",
+      "detail": "Trim outer whitespace from every cell and record each changed cell. Keep the original source file unchanged."
+    },
+    {
+      "id": 3,
+      "name": "Validate required fields and types",
+      "detail": "Require order_id, order_date, region, product, category, quantity, and unit_price. Dates must be YYYY-MM-DD, quantity a positive whole number, and unit_price a positive decimal with no more than two fractional digits. Invalid rows are quarantined."
+    },
+    {
+      "id": 4,
+      "name": "Quarantine duplicate order IDs",
+      "detail": "Keep the first otherwise-valid occurrence of each order_id. Quarantine later otherwise-valid repeats; never merge or discard them silently."
+    },
+    {
+      "id": 5,
+      "name": "Derive line totals exactly",
+      "detail": "Calculate line_total as quantity multiplied by unit_price using Decimal arithmetic. Do not round or fill missing inputs."
+    }
+  ],
+  "limits": {
+    "max_input_bytes": 10000000,
+    "max_data_rows": 20000,
+    "max_columns": 20,
+    "reference_schema_columns": 8
+  },
+  "quarantined_rows": [
+    {
+      "record_number": 73,
+      "reason": "Duplicate order_id: a prior otherwise-valid row was kept.",
+      "source_row": [
+        "SYN-0001",
+        "2026-06-22",
+        "North",
+        "Cedar & Clay mug",
+        "Home goods",
+        "2",
+        "12.50",
+        "Intentional repeated ID for quarantine demo."
+      ]
+    },
+    {
+      "record_number": 74,
+      "reason": "Missing required field: region.",
+      "source_row": [
+        "SYN-BAD-01",
+        "2026-06-23",
+        "",
+        "Rêve planter",
+        "Home goods",
+        "1",
+        "24.00",
+        "Missing region; kept for review."
+      ]
+    },
+    {
+      "record_number": 75,
+      "reason": "Invalid order_date: expected YYYY-MM-DD.",
+      "source_row": [
+        "SYN-BAD-02",
+        "2026-13-24",
+        "South",
+        "Tidal notebook",
+        "Paper goods",
+        "1",
+        "8.40",
+        "Invalid date example."
+      ]
+    },
+    {
+      "record_number": 76,
+      "reason": "Invalid quantity: enter a positive whole number.",
+      "source_row": [
+        "SYN-BAD-03",
+        "2026-06-25",
+        "East",
+        "Orbit canvas tote",
+        "Carry",
+        "many",
+        "18.00",
+        "Invalid quantity example."
+      ]
+    },
+    {
+      "record_number": 77,
+      "reason": "Invalid unit_price: enter a positive decimal with at most two fractional digits.",
+      "source_row": [
+        "SYN-BAD-04",
+        "2026-06-26",
+        "West",
+        "Maple serving tray",
+        "Kitchen",
+        "1",
+        "NaN",
+        "Invalid price example."
+      ]
+    },
+    {
+      "record_number": 78,
+      "reason": "Invalid unit_price: enter a positive decimal with at most two fractional digits.",
+      "source_row": [
+        "SYN-BAD-05",
+        "2026-06-27",
+        "North",
+        "Slate pen set",
+        "Paper goods",
+        "1",
+        "14.601",
+        "Three decimal places are rejected."
+      ]
+    },
+    {
+      "record_number": 79,
+      "reason": "Column count mismatch: expected 8, found 7.",
+      "source_row": [
+        "SYN-BAD-06",
+        "2026-06-28",
+        "South",
+        "Finch steel bottle",
+        "Drinkware",
+        "1",
+        "22.00"
+      ]
+    }
+  ]
+}

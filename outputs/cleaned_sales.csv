@@ -1,0 +1,73 @@
+order_id,order_date,region,product,category,quantity,unit_price,customer_note,line_total
+SYN-0001,2026-01-02,North,Rêve planter,Home goods,1,24.00,Fictional order for the offline CSV walkthrough.,24.00
+SYN-0002,2026-01-09,South,Orbit canvas tote,Carry,6,18.00,,108.00
+SYN-0003,2026-01-16,East,Finch steel bottle,Drinkware,5,22.00,,110.00
+SYN-0004,2026-01-23,West,Mosslight lamp,Lighting,4,38.75,,155.00
+SYN-0005,2026-01-03,North,Maple serving tray,Kitchen,3,29.25,,87.75
+SYN-0006,2026-01-10,South,Cedar & Clay mug,Home goods,2,12.50,,25.00
+SYN-0007,2026-01-17,East,Tidal notebook,Paper goods,1,8.40,,8.40
+SYN-0008,2026-01-24,West,Slate pen set,Paper goods,6,14.60,,87.60
+SYN-0009,2026-01-04,North,Rêve planter,Home goods,5,24.00,,120.00
+SYN-0010,2026-01-11,South,Orbit canvas tote,Carry,4,18.00,Fictional order for the offline CSV walkthrough.,72.00
+SYN-0011,2026-01-18,East,Finch steel bottle,Drinkware,3,22.00,,66.00
+SYN-0012,2026-01-25,West,Mosslight lamp,Lighting,2,38.75,,77.50
+SYN-0013,2026-02-05,North,Slate pen set,Paper goods,1,14.60,,14.60
+SYN-0014,2026-02-12,South,Rêve planter,Home goods,6,24.00,,144.00
+SYN-0015,2026-02-19,East,Orbit canvas tote,Carry,5,18.00,,90.00
+SYN-0016,2026-02-26,West,Finch steel bottle,Drinkware,4,22.00,,88.00
+SYN-0017,2026-02-06,North,Mosslight lamp,Lighting,3,38.75,,116.25
+SYN-0018,2026-02-13,South,Maple serving tray,Kitchen,2,29.25,,58.50
+SYN-0019,2026-02-20,East,Cedar & Clay mug,Home goods,1,12.50,Fictional order for the offline CSV walkthrough.,12.50
+SYN-0020,2026-02-27,West,Tidal notebook,Paper goods,6,8.40,,50.40
+SYN-0021,2026-02-07,North,Slate pen set,Paper goods,5,14.60,,73.00
+SYN-0022,2026-02-14,South,Rêve planter,Home goods,4,24.00,,96.00
+SYN-0023,2026-02-21,East,Orbit canvas tote,Carry,3,18.00,,54.00
+SYN-0024,2026-02-28,West,Finch steel bottle,Drinkware,2,22.00,,44.00
+SYN-0025,2026-03-08,North,Tidal notebook,Paper goods,1,8.40,,8.40
+SYN-0026,2026-03-15,South,Slate pen set,Paper goods,6,14.60,,87.60
+SYN-0027,2026-03-22,East,Rêve planter,Home goods,5,24.00,,120.00
+SYN-0028,2026-03-02,West,Orbit canvas tote,Carry,4,18.00,Fictional order for the offline CSV walkthrough.,72.00
+SYN-0029,2026-03-09,North,Finch steel bottle,Drinkware,3,22.00,,66.00
+SYN-0030,2026-03-16,South,Mosslight lamp,Lighting,2,38.75,,77.50
+SYN-0031,2026-03-23,East,Maple serving tray,Kitchen,1,29.25,,29.25
+SYN-0032,2026-03-03,West,Cedar & Clay mug,Home goods,6,12.50,,75.00
+SYN-0033,2026-03-10,North,Tidal notebook,Paper goods,5,8.40,,42.00
+SYN-0034,2026-03-17,South,Slate pen set,Paper goods,4,14.60,,58.40
+SYN-0035,2026-03-24,East,Rêve planter,Home goods,3,24.00,,72.00
+SYN-0036,2026-03-04,West,Orbit canvas tote,Carry,2,18.00,,36.00
+SYN-0037,2026-04-11,North,Cedar & Clay mug,Home goods,1,12.50,Fictional order for the offline CSV walkthrough.,12.50
+SYN-0038,2026-04-18,South,Tidal notebook,Paper goods,6,8.40,,50.40
+SYN-0039,2026-04-25,East,Slate pen set,Paper goods,5,14.60,,73.00
+SYN-0040,2026-04-05,West,Rêve planter,Home goods,4,24.00,,96.00
+SYN-0041,2026-04-12,North,Orbit canvas tote,Carry,3,18.00,,54.00
+SYN-0042,2026-04-19,South,Finch steel bottle,Drinkware,2,22.00,,44.00
+SYN-0043,2026-04-26,East,Mosslight lamp,Lighting,1,38.75,,38.75
+SYN-0044,2026-04-06,West,Maple serving tray,Kitchen,6,29.25,,175.50
+SYN-0045,2026-04-13,North,Cedar & Clay mug,Home goods,5,12.50,,62.50
+SYN-0046,2026-04-20,South,Tidal notebook,Paper goods,4,8.40,Fictional order for the offline CSV walkthrough.,33.60
+SYN-0047,2026-04-27,East,Slate pen set,Paper goods,3,14.60,,43.80
+SYN-0048,2026-04-07,West,Rêve planter,Home goods,2,24.00,,48.00
+SYN-0049,2026-05-14,North,Maple serving tray,Kitchen,1,29.25,,29.25
+SYN-0050,2026-05-21,South,Cedar & Clay mug,Home goods,6,12.50,,75.00
+SYN-0051,2026-05-28,East,Tidal notebook,Paper goods,5,8.40,,42.00
+SYN-0052,2026-05-08,West,Slate pen set,Paper goods,4,14.60,,58.40
+SYN-0053,2026-05-15,North,Rêve planter,Home goods,3,24.00,,72.00
+SYN-0054,2026-05-22,South,Orbit canvas tote,Carry,2,18.00,,36.00
+SYN-0055,2026-05-02,East,Finch steel bottle,Drinkware,1,22.00,Fictional order for the offline CSV walkthrough.,22.00
+SYN-0056,2026-05-09,West,Mosslight lamp,Lighting,6,38.75,,232.50
+SYN-0057,2026-05-16,North,Maple serving tray,Kitchen,5,29.25,,146.25
+SYN-0058,2026-05-23,South,Cedar & Clay mug,Home goods,4,12.50,,50.00
+SYN-0059,2026-05-03,East,Tidal notebook,Paper goods,3,8.40,,25.20
+SYN-0060,2026-05-10,West,Slate pen set,Paper goods,2,14.60,,29.20
+SYN-0061,2026-06-17,North,Mosslight lamp,Lighting,1,38.75,,38.75
+SYN-0062,2026-06-24,South,Maple serving tray,Kitchen,6,29.25,,175.50
+SYN-0063,2026-06-04,East,Cedar & Clay mug,Home goods,5,12.50,,62.50
+SYN-0064,2026-06-11,West,Tidal notebook,Paper goods,4,8.40,Fictional order for the offline CSV walkthrough.,33.60
+SYN-0065,2026-06-18,North,Slate pen set,Paper goods,3,14.60,,43.80
+SYN-0066,2026-06-25,South,Rêve planter,Home goods,2,24.00,,48.00
+SYN-0067,2026-06-05,East,Orbit canvas tote,Carry,1,18.00,,18.00
+SYN-0068,2026-06-12,West,Finch steel bottle,Drinkware,6,22.00,,132.00
+SYN-0069,2026-06-19,North,Mosslight lamp,Lighting,5,38.75,,193.75
+SYN-0070,2026-06-26,South,Maple serving tray,Kitchen,4,29.25,,117.00
+SYN-0071,2026-06-06,East,Cedar & Clay mug,Home goods,3,12.50,,37.50
+SYN-0072,2026-06-13,West,Tidal notebook,Paper goods,2,8.40,,16.80
